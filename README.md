@@ -144,6 +144,40 @@ Die Dokumentation besteht aus einer zentralen Projektseite und zwei Unterseiten:
 - Transportkostenprüfung und Testkonzept
 - Prozessbeschreibung
 
+## Screenshots und Projektnachweise
+
+Die folgenden Screenshots zeigen die praktische Umsetzung des Labs in Jira und Confluence.
+
+### Jira Kanban-Board
+
+Das Board zeigt den verwendeten Workflow von der Idee bis zum abgeschlossenen Vorgang. Die bearbeiteten Vorgänge befinden sich nach erfolgreicher Bearbeitung und Prüfung im Status **Erledigt**.
+
+![Jira Kanban-Board](docs/screenshots/jira-board-completed.png)
+
+### Abgeschlossener Epic
+
+Der Epic `KAN-5` bündelt die Arbeiten zur Optimierung von Transportkosten und Frachtenabrechnung. Alle zugehörigen Vorgänge wurden abgeschlossen.
+
+![Abgeschlossener Jira Epic](docs/screenshots/jira-epic-completed.png)
+
+### Confluence Projektübersicht
+
+Die zentrale Confluence-Seite dokumentiert Projektziel, eingesetzte Werkzeuge und die zugehörigen Jira-Vorgänge.
+
+![Confluence Projektübersicht](docs/screenshots/confluence-project-overview.png)
+
+### Prüfkriterien und Testkonzept
+
+Für die Transportkostenprüfung wurden fachliche Prüfkriterien definiert und in Confluence dokumentiert.
+
+![Confluence Testkonzept](docs/screenshots/confluence-test-concept.png)
+
+### Soll-Ist-Vergleich, Fehleranalyse und Retest
+
+Der Testfall zeigt zunächst eine Abweichung von **15 EUR** beim Mautzuschlag. Nach der Korrektur stimmen Soll- und Ist-Werte überein und der Retest wird erfolgreich abgeschlossen.
+
+![Confluence Testfall und Retest](docs/screenshots/confluence-test-case-retest.png)
+
 ## Im Projekt angewendete Kenntnisse
 
 Das Portfolio-Lab zeigt praktische Arbeit mit:
