@@ -1,204 +1,344 @@
-# Transportation Management Orchestration Lab
+Transportation Management Orchestration Lab
 
-Praxisnahes Portfolio-Projekt zur strukturierten Bearbeitung eines vereinfachten Transportation-Management-Prozesses mit Jira und Confluence.
+Praxisnahes Portfolio-Lab zur strukturierten Bearbeitung eines vereinfachten Transportation-Management-Prozesses mit Jira und Confluence.
 
-Im Mittelpunkt stehen Anforderungsmanagement, Kanban-basierte Vorgangssteuerung, Transportkostenprüfung, Fehleranalyse, Akzeptanzkriterien, Testmanagement und nachvollziehbare Dokumentation.
+Das Projekt zeigt, wie fachliche Anforderungen erfasst, über einen Kanban-Workflow gesteuert, anhand definierter Kriterien geprüft und nachvollziehbar dokumentiert werden können. Im Mittelpunkt steht ein fiktives Szenario zur Prüfung von Transportkosten mit Grundfrachtrate, Mautzuschlag und Soll-Ist-Abweichungen.
 
-> **Hinweis:** Dieses Repository ist ein eigenständiges Portfolio-Lab auf Basis eines fiktiven Transportation-Management-Szenarios. Es werden keine internen oder proprietären Unternehmensdaten verwendet.
+Hinweis: Das Lab basiert auf einem eigenständig erstellten, fiktiven Szenario. Es werden keine internen oder proprietären Unternehmensdaten verwendet.
 
-## Projektziel
+Projektziel
 
-Ziel des Labs ist es zu zeigen, wie fachliche Anforderungen im Transportmanagement strukturiert erfasst, priorisiert, bearbeitet, getestet und dokumentiert werden können.
+Ziel des Labs ist ein durchgängiger Ablauf von der fachlichen Anforderung bis zum dokumentierten Testergebnis.
 
-Das zentrale Szenario behandelt die Prüfung von Transportkosten. Dabei werden Grundfrachtraten, Mautzuschläge und weitere Kostenbestandteile betrachtet. Abweichungen zwischen erwarteten und tatsächlich berechneten Kosten sollen erkannt, analysiert und nachvollziehbar dokumentiert werden.
+Dabei werden insbesondere folgende Arbeitsschritte abgebildet:
 
-## Eingesetzte Werkzeuge und Methoden
+Anforderungen strukturieren und in Jira erfassen
 
-- Jira
-- Confluence
-- Kanban
-- Anforderungsmanagement
-- User Stories
-- Akzeptanzkriterien
-- Testmanagement
-- Soll-Ist-Vergleich
-- Fehleranalyse
-- Retest
-- technische Dokumentation
+Epic, Feature, Story, Task und Bug sinnvoll einsetzen
 
-## Jira-Struktur
+Vorgänge über einen Kanban-Workflow steuern
 
-Für das Szenario wurden unterschiedliche Jira-Vorgangstypen verwendet.
+Akzeptanz- und Prüfkriterien definieren
 
-| Key | Typ | Beschreibung |
-|---|---|---|
-| KAN-5 | Epic | Transportkosten und Frachtenabrechnung optimieren |
-| KAN-4 | Feature | Frachtenabrechnung transparenter gestalten |
-| KAN-6 | Story | Kostenabweichungen nachvollziehen können |
-| KAN-7 | Task | Prüfkriterien für Frachtraten definieren |
-| KAN-8 | Bug | Mautzuschlag wird bei Kostenprüfung falsch berechnet |
+Transportkosten über Soll-Ist-Vergleiche prüfen
 
-Der Epic bündelt den übergeordneten fachlichen Themenbereich. Feature, Story, Task und Bug bilden unterschiedliche Arten der konkreten Arbeit innerhalb des Szenarios ab.
+Abweichungen analysieren und dokumentieren
 
-## Kanban-Workflow
+Korrekturen durch einen Retest verifizieren
 
-Die Jira-Vorgänge wurden über einen definierten Kanban-Workflow gesteuert:
+Jira-Vorgänge mit Confluence-Dokumentation verknüpfen
 
-**Idee → Zu erledigen → In Bearbeitung → Im Test → Erledigt**
+Projektdokumentation
 
-Die Status haben folgende Bedeutung:
+Dokument
 
-| Status | Bedeutung |
-|---|---|
-| Idee | Eine neue Anforderung, Aufgabe oder ein Fehler wurde erfasst. |
-| Zu erledigen | Der Vorgang wurde geprüft und zur Bearbeitung eingeplant. |
-| In Bearbeitung | Die fachliche oder technische Bearbeitung läuft. |
-| Im Test | Die Umsetzung wird anhand definierter Kriterien geprüft. |
-| Erledigt | Prüfung und Bearbeitung wurden erfolgreich abgeschlossen. |
+Inhalt
 
-## User Story und Akzeptanzkriterien
+Prozessbeschreibung
 
-Die Story `KAN-6` beschreibt die fachliche Anforderung, Kostenabweichungen nachvollziehen zu können.
+Kanban-Workflow, Jira-Vorgangstypen und Bearbeitungsprozess
 
-Dafür wurden folgende Akzeptanzkriterien definiert:
+Testkonzept
 
-- Erwartete und tatsächliche Transportkosten können gegenübergestellt werden.
-- Abweichungen sind eindeutig erkennbar.
-- Frachtraten und Zuschläge können getrennt geprüft werden.
-- Die Ursache einer Abweichung kann dokumentiert werden.
-- Das Prüfergebnis bleibt für andere Beteiligte nachvollziehbar.
+Prüfkriterien, Soll-Ist-Vergleich, Fehleranalyse und Retest
 
-## Beispiel einer Transportkostenprüfung
+Fachliche Anforderungen
 
-Im Testszenario wurde eine fehlerhafte Berechnung des Mautzuschlags simuliert.
+REQ-001 bis REQ-006 und Traceability Matrix
 
-| Kostenbestandteil | Soll | Ist |
-|---|---:|---:|
-| Grundfrachtrate | 500 EUR | 500 EUR |
-| Mautzuschlag | 45 EUR | 60 EUR |
-| Gesamtkosten | 545 EUR | 560 EUR |
-| Abweichung | 0 EUR | +15 EUR |
+Testfall TC-001
 
-Der Soll-Ist-Vergleich zeigt eine Abweichung von 15 EUR.
+Konkreter Testfall zur Transportkostenabweichung
 
-Die Grundfrachtrate ist korrekt. Die Abweichung kann eindeutig dem Mautzuschlag zugeordnet werden.
+Eingesetzte Werkzeuge und Methoden
 
-## Fehleranalyse
+Jira
 
-Der Fehler wurde in Jira als Bug `KAN-8` dokumentiert.
+Confluence
 
-Die Bearbeitung umfasste:
+Kanban
 
-1. Fehlerbeschreibung
-2. Soll-Verhalten
-3. Ist-Verhalten
-4. Schritte zur Reproduktion
-5. Fehleranalyse
-6. Korrektur
-7. Retest
-8. Abschlussprüfung
+Anforderungsmanagement
 
-Die Analyse ergab, dass statt des erwarteten Mautzuschlags von 45 EUR ein Wert von 60 EUR berücksichtigt wurde.
+User Stories
 
-## Retest
+Akzeptanzkriterien
 
-Nach der simulierten Korrektur wurde die Transportkostenberechnung erneut geprüft.
+Testmanagement
 
-| Kostenbestandteil | Erwartet | Nach Korrektur |
-|---|---:|---:|
-| Grundfrachtrate | 500 EUR | 500 EUR |
-| Mautzuschlag | 45 EUR | 45 EUR |
-| Gesamtkosten | 545 EUR | 545 EUR |
-| Abweichung | 0 EUR | 0 EUR |
+funktionale Tests
 
-**Retest-Ergebnis: Bestanden**
+Soll-Ist-Vergleich
 
-Die erwarteten und tatsächlich berechneten Transportkosten stimmen überein. Die zuvor festgestellte Abweichung tritt nicht mehr auf.
+Fehleranalyse
 
-## Zusammenspiel von Jira und Confluence
+Retest
 
-Jira wird im Lab zur operativen Steuerung der Arbeit eingesetzt.
+Traceability
 
-Anforderungen, Aufgaben und Fehler werden als Vorgänge erfasst, priorisiert und durch den definierten Kanban-Workflow geführt.
+technische und fachliche Dokumentation
 
-Confluence ergänzt Jira um die fachliche Dokumentation. Dort wurden unter anderem folgende Inhalte dokumentiert:
+Jira-Struktur
 
-- Projektübersicht
-- Prozessbeschreibung
-- Prüfkriterien
-- Testfall
-- Soll-Ist-Vergleich
-- Fehleranalyse
-- Korrektur
-- Retest
-- Testergebnis
+Für das Szenario wurden mehrere Jira-Vorgangstypen verwendet.
 
-Die relevanten Jira-Vorgänge wurden direkt in die Confluence-Dokumentation eingebunden. Dadurch bleiben Bearbeitungsstatus und fachliche Dokumentation miteinander verknüpft.
+Key
 
-## Confluence-Struktur
+Typ
 
-Die Dokumentation besteht aus einer zentralen Projektseite und zwei Unterseiten:
+Beschreibung
 
-**Transportation Management Orchestration Lab**
+KAN-5
 
-- Transportkostenprüfung und Testkonzept
-- Prozessbeschreibung
+Epic
 
-## Screenshots und Projektnachweise
+Transportkosten und Frachtenabrechnung optimieren
 
-Die folgenden Screenshots zeigen die praktische Umsetzung des Labs in Jira und Confluence.
+KAN-4
 
-### Jira Kanban-Board
+Feature
 
-Das Board zeigt den verwendeten Workflow von der Idee bis zum abgeschlossenen Vorgang. Die bearbeiteten Vorgänge befinden sich nach erfolgreicher Bearbeitung und Prüfung im Status **Erledigt**.
+Frachtenabrechnung transparenter gestalten
 
-![Jira Kanban-Board](docs/screenshots/jira-board-completed.png)
+KAN-6
 
-### Abgeschlossener Epic
+Story
 
-Der Epic `KAN-5` bündelt die Arbeiten zur Optimierung von Transportkosten und Frachtenabrechnung. Alle zugehörigen Vorgänge wurden abgeschlossen.
+Kostenabweichungen nachvollziehen können
 
-![Abgeschlossener Jira Epic](docs/screenshots/jira-epic-completed.png)
+KAN-7
 
-### Confluence Projektübersicht
+Task
 
-Die zentrale Confluence-Seite dokumentiert Projektziel, eingesetzte Werkzeuge und die zugehörigen Jira-Vorgänge.
+Prüfkriterien für Frachtraten definieren
 
-![Confluence Projektübersicht](docs/screenshots/confluence-project-overview.png)
+KAN-8
 
-### Prüfkriterien und Testkonzept
+Bug
 
-Für die Transportkostenprüfung wurden fachliche Prüfkriterien definiert und in Confluence dokumentiert.
+Mautzuschlag wird bei Kostenprüfung falsch berechnet
 
-![Confluence Testkonzept](docs/screenshots/confluence-test-concept.png)
+Der Epic bündelt den übergeordneten Themenbereich. Feature, Story, Task und Bug bilden unterschiedliche Arten der fachlichen Arbeit innerhalb des Labs ab.
 
-### Soll-Ist-Vergleich, Fehleranalyse und Retest
+Kanban-Workflow
 
-Der Testfall zeigt zunächst eine Abweichung von **15 EUR** beim Mautzuschlag. Nach der Korrektur stimmen Soll- und Ist-Werte überein und der Retest wird erfolgreich abgeschlossen.
+Die Vorgänge werden über einen definierten Workflow gesteuert:
 
-![Confluence Testfall und Retest](docs/screenshots/confluence-test-case-retest.png)
+Idee → Zu erledigen → In Bearbeitung → Im Test → Erledigt
 
-## Im Projekt angewendete Kenntnisse
+Status
 
-Das Portfolio-Lab zeigt praktische Arbeit mit:
+Bedeutung
 
-- Jira-Vorgangsmanagement
-- Epic, Feature, Story, Task und Bug
-- Kanban-Workflows
-- Anforderungsmanagement
-- User Stories
-- Akzeptanzkriterien
-- funktionalen Tests
-- Soll-Ist-Vergleichen
-- Fehleranalyse
-- Retesting
-- Jira-Confluence-Verknüpfungen
-- strukturierter fachlicher Dokumentation
+Idee
 
-## Projektstatus
+Eine neue Anforderung, Aufgabe oder ein Fehler wurde erfasst.
+
+Zu erledigen
+
+Der Vorgang wurde geprüft und zur Bearbeitung eingeplant.
+
+In Bearbeitung
+
+Die fachliche oder technische Bearbeitung läuft.
+
+Im Test
+
+Die Umsetzung beziehungsweise das Ergebnis wird anhand definierter Kriterien geprüft.
+
+Erledigt
+
+Bearbeitung und Prüfung wurden abgeschlossen.
+
+Fachliche Anforderung
+
+Die zentrale Story KAN-6 beschreibt die Anforderung, Abweichungen zwischen erwarteten und tatsächlich berechneten Transportkosten nachvollziehen zu können.
+
+Dafür wurden unter anderem folgende Akzeptanzkriterien definiert:
+
+Soll- und Ist-Kosten können gegenübergestellt werden.
+
+Abweichungen sind eindeutig erkennbar.
+
+Frachtraten und Zuschläge können getrennt geprüft werden.
+
+Die Ursache einer Abweichung kann dokumentiert werden.
+
+Prüfergebnisse bleiben für andere Beteiligte nachvollziehbar.
+
+Die detaillierten Anforderungen sind in transport-cost-requirements.md dokumentiert und über eine Traceability Matrix mit den Jira-Vorgängen und Testnachweisen verknüpft.
+
+Testszenario
+
+Im Testszenario wird eine fehlerhafte Berechnung des Mautzuschlags geprüft.
+
+Kostenbestandteil
+
+Soll
+
+Ist
+
+Grundfrachtrate
+
+500 EUR
+
+500 EUR
+
+Mautzuschlag
+
+45 EUR
+
+60 EUR
+
+Gesamtkosten
+
+545 EUR
+
+560 EUR
+
+Abweichung
+
+0 EUR
+
++15 EUR
+
+Der Soll-Ist-Vergleich zeigt eine Abweichung von 15 EUR. Die Grundfrachtrate ist korrekt, sodass die Differenz eindeutig dem Mautzuschlag zugeordnet werden kann.
+
+Der konkrete Ablauf ist im Testfall TC-001 dokumentiert.
+
+Fehleranalyse und Retest
+
+Der festgestellte Fehler wurde als KAN-8 erfasst und anhand von Soll-Verhalten, Ist-Verhalten, Reproduktionsschritten und Fehlerursache dokumentiert.
+
+Im fiktiven Testszenario wird die Berechnungsregel anschließend so korrigiert, dass der vorgesehene Mautzuschlag von 45 EUR berücksichtigt wird.
+
+Der Retest ergibt:
+
+Kostenbestandteil
+
+Erwartet
+
+Nach Korrektur
+
+Grundfrachtrate
+
+500 EUR
+
+500 EUR
+
+Mautzuschlag
+
+45 EUR
+
+45 EUR
+
+Gesamtkosten
+
+545 EUR
+
+545 EUR
+
+Abweichung
+
+0 EUR
+
+0 EUR
+
+Retest-Ergebnis: Bestanden
+
+Die Soll- und Ist-Werte stimmen nach der Korrektur überein. Der zuvor dokumentierte Fehler tritt im Retest nicht erneut auf.
+
+Zusammenspiel von Jira und Confluence
+
+Jira wird im Lab für die operative Vorgangssteuerung eingesetzt. Anforderungen, Aufgaben und Fehler werden dort erfasst, bearbeitet, getestet und abgeschlossen.
+
+Confluence ergänzt diesen Ablauf um die fachliche Dokumentation. Dort werden unter anderem Prüfkriterien, Testfälle, Soll-Ist-Vergleiche, Fehleranalysen und Retest-Ergebnisse festgehalten.
+
+Relevante Jira-Vorgänge sind in die Confluence-Seiten eingebunden. Dadurch bleiben Bearbeitungsstatus und fachlicher Nachweis miteinander verknüpft.
+
+Projektnachweise
+
+Jira Kanban-Board
+
+Das Board zeigt den verwendeten Workflow und die abgeschlossenen Vorgänge.
+
+
+
+Abgeschlossener Epic
+
+Der Epic KAN-5 ist vollständig abgeschlossen. Die zugehörigen Vorgänge befinden sich im Status Erledigt.
+
+
+
+Confluence Projektübersicht
+
+Die zentrale Projektseite dokumentiert Ziel, eingesetzte Werkzeuge und die eingebundenen Jira-Vorgänge.
+
+
+
+Prüfkriterien und Testkonzept
+
+Die fachlichen Prüfkriterien für Grundfrachtrate, Mautzuschlag, weitere Zuschläge, Gesamtkosten und Abweichungen sind strukturiert dokumentiert.
+
+
+
+Soll-Ist-Vergleich, Fehleranalyse und Retest
+
+Der dokumentierte Testfall zeigt die Abweichung von 15 EUR, die Fehleranalyse, die Korrektur im Testszenario und den erfolgreichen Retest.
+
+
+
+Nachverfolgbarkeit
+
+Das Lab bildet folgende Kette nachvollziehbar ab:
+
+Fachliche Anforderung → Jira-Vorgang → Prüfkriterium → Testfall → Fehleranalyse → Korrektur → Retest → Dokumentation
+
+Die Verbindung zwischen Anforderungen, Jira-Vorgängen und Testnachweisen ist zusätzlich in der Traceability Matrix dokumentiert.
+
+Repository-Struktur
+
+transport-management-orchestration-lab/
+├── README.md
+├── docs/
+│   ├── process-description.md
+│   ├── test-concept.md
+│   └── screenshots/
+├── requirements/
+│   └── transport-cost-requirements.md
+└── test-cases/
+    └── TC-001-transport-cost-variance.md
+
+Im Projekt angewendete Kenntnisse
+
+Das Portfolio-Lab dokumentiert praktische Arbeit mit Jira und Confluence sowie Grundlagen aus Anforderungsmanagement, Testmanagement und strukturierter Prozessdokumentation.
+
+Besonders sichtbar werden dabei:
+
+strukturierte Vorgangssteuerung mit Jira
+
+Arbeit mit Epic, Feature, Story, Task und Bug
+
+Kanban-basierte Bearbeitungsprozesse
+
+Definition prüfbarer Anforderungen und Akzeptanzkriterien
+
+funktionale Tests und Soll-Ist-Vergleiche
+
+strukturierte Fehleranalyse
+
+Retesting nach einer Korrektur
+
+Traceability zwischen Anforderungen und Tests
+
+Jira-Confluence-Verknüpfungen
+
+nachvollziehbare fachliche Dokumentation
+
+Projektstatus
 
 Das definierte Szenario wurde vollständig bearbeitet.
 
-Alle Jira-Vorgänge wurden durch den vorgesehenen Workflow geführt, getestet und auf den Status **Erledigt** gesetzt. Der übergeordnete Epic wurde nach Abschluss aller zugehörigen Vorgänge ebenfalls abgeschlossen.
+Alle vorgesehenen Jira-Vorgänge wurden durch den Workflow geführt und abgeschlossen. Die zugehörige fachliche Dokumentation, die Anforderungen sowie der Testfall wurden zusätzlich im Repository dokumentiert.
 
-Die fachliche Dokumentation wurde parallel in Confluence erstellt und mit den relevanten Jira-Vorgängen verknüpft.
+Das Repository dient damit als kompakter Praxisnachweis für die strukturierte Arbeit an der Schnittstelle zwischen Transportation Management, IT-Prozessen, Anforderungsmanagement und Softwaretests.
